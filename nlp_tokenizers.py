@@ -3,6 +3,7 @@
 #---------------------
 
 from nltk.tokenize import word_tokenize
+from hazm import word_tokenize as persian_word_tokenize
 
 #Whitespace Tokenizer
 def whitespace_tokenizer(text):
@@ -19,6 +20,6 @@ def english_tokenizer(text):
 
 # Persian Tokenizer
 def persian_tokenizer(text):
-    return text.split()  # Placeholder for Persian tokenization logic
-
+    tokens = persian_word_tokenize(text)
+    return tokens
 #----------------------------------
