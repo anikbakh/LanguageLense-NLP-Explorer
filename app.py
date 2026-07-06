@@ -5,13 +5,47 @@ from token_display import display_tokens
 #CSS
 st.markdown("""
 <style>
+
 .stApp {
-    background-color: #00008A;
+    background-color: #F8F7F2;
+}
+
+/* Main text */
+h1, h2, h3, h4, h5, h6,
+p, label {
+    color: #222222 !important;
+}
+
+/* Buttons */
+.stButton > button {
+    background-color: black !important;
+    border: 1px solid black !important;
+}
+
+.stButton > button p,
+.stButton > button span {
+    color: white !important;
+}
+
+.stButton > button:hover {
+    background-color: #333333 !important;
+}
+
+/* Dropdown / Selectbox */
+.stSelectbox label {
+    color: #222222 !important;
+}
+
+.stSelectbox div[data-baseweb="select"] {
+    background-color: black !important;
+}
+
+.stSelectbox div[data-baseweb="select"] * {
+    color: white !important;
 }
 
 </style>
 """, unsafe_allow_html=True)
-
 
 #----------------------------
 #Guide goes here
