@@ -2,7 +2,7 @@
 # Tokenizer Functions
 #---------------------
 
-from nltk.tokenize import word_tokenize
+from nltk.tokenize import word_tokenize as english_word_tokenize
 from hazm import word_tokenize as persian_word_tokenize
 
 #Whitespace Tokenizer
