@@ -119,12 +119,12 @@ if st.button("Analyze"):
 #Compare Persian and English Tokenization
 st.title("Chose one of the following sentences to see how tokenization works for English and Persian:")
 examples = {
-    "Sentence 1": {
+    "I love learning about AI | من عاشق یادگیری در مورد هوش مصنوعی هستم ": {
         "English": "I love learning about AI.",
         "Persian": "من عاشق یادگیری در مورد هوش مصنوعی هستم."
         },
 
-    "Sentence 2": {
+    "Tokenization is fundamental to Natural Language Processing | توکن‌سازی برای پردازش زبان طبیعی بنیادین است.": {
         "English": "Tokenization is fundamental to Natural Language Processing.",
         "Persian": "توکن‌سازی برای پردازش زبان طبیعی بنیادین است."
         }
