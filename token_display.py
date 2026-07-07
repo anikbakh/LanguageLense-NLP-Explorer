@@ -12,30 +12,18 @@ colors = [
 ]
 
 def display_tokens(tokens):
-    html = """
-    <div style="
-        display: flex;
-        flex-wrap: wrap;
-        gap: 6px;
-        align-items: center;
-    ">
-    """
+    sentence = ""
 
     for i, token in enumerate(tokens):
-        color = colors[i % len(colors)]
-        html += f"""
-        <span style="
-            background-color: {color};
-            color: black;
-            padding: 6px 10px;
-            border-radius: 8px;
-            font-weight: bold;
-            white-space: nowrap;
-        ">
-            {token}
-        </span>
-        """
+        sentence += (
+            f'<span style="'
+            f'background-color:{colors[i % len(colors)]};'
+            f'padding:4px 8px;'
+            f'border-radius:6px;'
+            f'color:black;'
+            f'font-weight:bold;'
+            f'margin-right:4px;'
+            f'">{token}</span> '
+        )
 
-    html += "</div>"
-
-    st.markdown(html, unsafe_allow_html=True)
+    st.markdown(sentence, unsafe_allow_html=True)
