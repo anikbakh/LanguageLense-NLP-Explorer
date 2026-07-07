@@ -1,3 +1,16 @@
+import streamlit as st
+
+colors = [
+    "#D6EAF8",
+    "#D5F5E3",
+    "#FCF3CF",
+    "#FADBD8",
+    "#E8DAEF",
+    "#FDEBD0",
+    "#D4EFDF",
+    "#EBF5FB"
+]
+
 def display_tokens(tokens):
     html = """
     <div style="
