@@ -12,24 +12,23 @@ colors = [
 ]
 
 def display_tokens(tokens):
-    cols = st.columns(len(tokens))
+    html = ""
 
     for i, token in enumerate(tokens):
-        with cols[i]:
-            st.markdown(
-                f"""
-                <div style="
-                    background-color:{colors[i % len(colors)]};
-                    color:black;
-                    padding:12px;
-                    border-radius:10px;
-                    border:1px solid gray;
-                    text-align:center;
-                    font-weight:bold;
-                    font-size:20px;
-                ">
-                {token}
-                </div>
-                """,
-                unsafe_allow_html=True
-            )
+        color = colors[i % len(colors)]
+        html += f"""
+        <span style="
+            background-color:{color};
+            color:black;
+            padding:6px 10px;
+            border-radius:8px;
+            margin-right:4px;
+            display:inline-block;
+            font-weight:bold;
+            margin-bottom:6px;
+        ">
+            {token}
+        </span>
+        """
+
+    st.markdown(html, unsafe_allow_html=True)
