@@ -127,8 +127,14 @@ examples = {
     "Tokenization is fundamental to Natural Language Processing | توکن‌سازی برای پردازش زبان طبیعی بنیادین است.": {
         "English": "Tokenization is fundamental to Natural Language Processing.",
         "Persian": "توکن‌سازی برای پردازش زبان طبیعی بنیادین است."
-        }
+        },
+
+    "Artificial intelligence is changing the way we communicate | هوش مصنوعی شیوهٔ ارتباط مردم را تغییر می‌دهد": {
+        "English": "Artificial intelligence is changing the way we communicate.",
+        "Persian": "هوش مصنوعی شیوهٔ ارتباط مردم را تغییر می‌دهد."
+    }
 }
+
 
 selected = st.selectbox("Select a sentence:", list(examples.keys()))
 
