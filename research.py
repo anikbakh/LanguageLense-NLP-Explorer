@@ -21,3 +21,16 @@ def show_guide():
     st.write("Now, handling text in different language may pose challenges for AI models especially for non-Latin scripts. A signifiant amount of data and text that AI has been trained on has been in English or similar languages and this can lead to difficulties in processing that have different grammatical structures, spacing rules, and characters.")
 
     st.subheader("Why Persian is challenging for AI to understand?")
+    st.write("""
+    Persian is considered a low-resource language in the field of NLP, meaning that there is less available data and research compared to high-resource languages like English. This in addition to the unique characteristics of Persian, it can be challenging for AI models to process and understand Persian Text. For example, Persian is written in a script that is different from the Latin alphabet, and it has its own set of grammatical rules and structures. Additionally, Persian has a rich morphology, meaning that words can have many different forms depending on their context. This can make it difficult for AI models to accurately tokenize and analyze Persian text.")
+    
+    Other challenges include:
+    
+    - Persian is written from right to left
+    - Persian uses both full spaces and half spaces between words, which can affect tokenization and word segmentation.
+    - Many Persian letters have different forms depending on their position in a word; if it is the first letter, middle, or last letter
+    - A word in Persian can have different forms depending on its position in a sentence, which can make it difficult for AI models to accurately identify and analyze words.
+    """)
+    
+    st.subheader("What comes after tokenization?")
+    st.write("So what is the purpose of tokens and tokenization? After a sentence is segmented into words or letters (or what the specific tokenizer is designed to do), the next step is to convert these tokens into numerical representations that can be processed by machine learning algorithms.")
