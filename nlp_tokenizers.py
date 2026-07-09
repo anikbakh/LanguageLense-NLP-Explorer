@@ -2,6 +2,8 @@
 # Tokenizer Functions
 #---------------------
 
+import nltk
+
 from nltk.tokenize import word_tokenize as english_word_tokenize
 from hazm import word_tokenize as persian_word_tokenize
 
@@ -12,9 +14,6 @@ def whitespace_tokenizer(text):
 
 #English Tokenizer
 def english_tokenizer(text):
-    import nltk
-    nltk.download('punkt')
-    nltk.download('punkt_tab')
     tokens = english_word_tokenize(text)
     return tokens
 
