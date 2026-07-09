@@ -153,7 +153,7 @@ if st.button("Analyze"):
 
 #----------------------------
 #Compare Persian and English Tokenization
-st.title("Chose one of the following sentences to see how tokenization works for English and Persian:")
+st.title("Choose one of the following sentences to see how tokenization works for English and Persian:")
 
 examples = {
     "I am going to the bookstore tomorrow. | من فردا به کتاب‌فروشی می‌روم": {
@@ -162,12 +162,12 @@ examples = {
         "Explanation": """
         **Why this matters: Persian uses special spacing rules**
 
-        Persian uses invisible spaces called half-spaces in words like 
+        Persian uses half-spaces in words like 
         "کتاب‌فروشی" and "می‌روم".
 
         These spaces help Persian readers understand words, but they can be 
         challenging for AI because they are different from normal spaces used 
-        in English.
+        in English. Tokenizers need to be aware of these rules to correctly split Persian text into words.
         """,
         "English Tokenizer": "English word splitter (NLTK)",
         "Persian Tokenizer": "Persian language word splitter (Hazm)"
